@@ -44,7 +44,7 @@ function Skills({ onChange, formData, errors }) {
         {skills.map((skill) => (
           <label
             key={skill}
-            className="text-xs rounded-md border border-placeholder bg-input w-32 h-8 p-2 text-text font-medium flex items-center gap-1 hover:bg-accent has-checked:bg-checked has-checked:text-title accent-secondary cursor-pointer"
+            className="text-xs rounded-md border border-placeholder bg-input w-32 h-9 p-2 text-text font-medium flex items-center gap-1 hover:bg-accent has-checked:bg-checked has-checked:text-title accent-secondary cursor-pointer"
           >
             <input
               type="checkbox"
@@ -66,7 +66,7 @@ function Skills({ onChange, formData, errors }) {
             name="otherSkills"
             id="otherSkills"
             placeholder="e.g. Video Editing..."
-            className="w-48"
+            className="w-60"
             onChange={(e) => onChange("otherSkills", e.target.value)}
             value={formData.otherSkills}
           />
@@ -74,12 +74,18 @@ function Skills({ onChange, formData, errors }) {
 
         {/* Right */}
         <div className="flex flex-col gap-2 mt-3">
-          <label
-            htmlFor="primaryInterest"
-            className="text-text text-xs font-medium"
-          >
-            Primary Interest
-          </label>
+          <div className="flex flex-row gap-1">
+            <label
+              htmlFor="primaryInterest"
+              className="text-text text-xs font-medium"
+            >
+              Primary Interest
+            </label>
+            <span className="text-red-500 text-xs font-medium mr-1">
+              *
+            </span>
+          </div>
+
           <div>
             <Dropdown
               name="primaryInterest"

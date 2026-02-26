@@ -14,11 +14,12 @@ function OnlinePresence({ onChange, errors, formData }) {
       <div className="w-full flex flex-row justify-between mt-2">
         <div>
           <Input
+            required={true}
             label="Email"
             name="email"
             id="email"
             placeholder="you@example.com"
-            className={"w-48"}
+            className={"w-60"}
             type={"email"}
             onChange={(e) => onChange("email", e.target.value)}
             value={formData.email}
@@ -28,11 +29,12 @@ function OnlinePresence({ onChange, errors, formData }) {
 
         <div>
           <Input
+            required={true}
             label="Phone"
             name="phone"
             id="phone"
             placeholder="Your phone number"
-            className={"w-48"}
+            className={"w-60"}
             type={"tel"}
             onChange={(e) => onChange("phone", e.target.value)}
             value={formData.phone}
@@ -58,7 +60,7 @@ function OnlinePresence({ onChange, errors, formData }) {
             name="discord"
             id="discord"
             placeholder="Username#1234"
-            className="text-[10px] rounded-md border border-placeholder bg-input w-full h-8 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
+            className="text-[10px] rounded-md border border-placeholder bg-input w-full h-9 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
             onChange={(e) => onChange("discord", e.target.value)}
             value={formData.discord}
           />
@@ -76,7 +78,7 @@ function OnlinePresence({ onChange, errors, formData }) {
             name="instagram"
             id="instagram"
             placeholder="@handle"
-            className="text-[10px] rounded-md border border-placeholder bg-input w-full h-8 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
+            className="text-[10px] rounded-md border border-placeholder bg-input w-full h-9 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
             onChange={(e) => onChange("instagram", e.target.value)}
             value={formData.instagram}
           />
@@ -94,7 +96,7 @@ function OnlinePresence({ onChange, errors, formData }) {
             name="linkedin"
             id="linkedin"
             placeholder="linkedin.com/in/yourprofile"
-            className="text-[10px] rounded-md border border-placeholder bg-input w-full h-8 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
+            className="text-[10px] rounded-md border border-placeholder bg-input w-full h-9 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
             onChange={(e) => onChange("linkedin", e.target.value)}
             value={formData.linkedin}
           />
@@ -113,7 +115,7 @@ function OnlinePresence({ onChange, errors, formData }) {
           name="portfolio"
           id="portfolio"
           placeholder="Your portfolio link"
-          className="text-[10px] rounded-md border border-placeholder bg-input w-full h-8 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
+          className="text-[10px] rounded-md border border-placeholder bg-input w-full h-9 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
           onChange={(e) => onChange("portfolio", e.target.value)}
           value={formData.portfolio}
         />
@@ -131,7 +133,7 @@ function OnlinePresence({ onChange, errors, formData }) {
           name="github"
           id="github"
           placeholder="Your github link"
-          className="text-[10px] rounded-md border border-placeholder bg-input w-full h-8 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
+          className="text-[10px] rounded-md border border-placeholder bg-input w-full h-9 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
           onChange={(e) => onChange("github", e.target.value)}
           value={formData.github}
         />

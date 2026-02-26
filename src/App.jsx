@@ -76,7 +76,7 @@ function App() {
 
   return (
     <div className="bg-[url('./assets/Gemini_Generated_Image_pj19olpj19olpj19.png')] bg-cover min-h-screen py-14 flex justify-center items-center">
-      <div className="bg-white w-120 rounded-3xl shadow-lg flex flex-col items-center text-2xl font-bold pb-8">
+      <div className="bg-white w-150 rounded-3xl shadow-lg flex flex-col items-center text-2xl font-bold pb-8">
         <div className="w-full h-28 bg-[url('./assets/mini_bg.png')] bg-cover rounded-t-3xl flex flex-col justify-center gap-1 p-8 text-white">
           <h1 className="text-3xl">
             Join Our{" "}

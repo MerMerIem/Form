@@ -5,7 +5,7 @@ function Textarea({ className, title, placeholder, value, onChange }) {
         {title}
       </span>
       <textarea
-        className="text-[10px] rounded-md border border-placeholder bg-input w-full h-20 p-2 text-text font-medium"
+        className="text-[10px] rounded-md border border-placeholder bg-input w-full h-20 p-2 text-text font-medium focus:outline-offset-2 focus:outline-placeholder"
         placeholder={placeholder}
         value={value}
         onChange={onChange}

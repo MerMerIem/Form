@@ -14,11 +14,12 @@ function PersonalIdentity({ onChange, errors, formData }) {
       <div className="w-full flex flex-row justify-between mt-2">
         <div>
           <Input
+            required={true}
             label="Full Name"
             name="fullName"
             id="fullName"
             placeholder="Your full name"
-            className={"w-48"}
+            className={"w-60"}
             onChange={(e) => onChange("fullName", e.target.value)}
             value={formData.fullName}
           />
@@ -27,11 +28,12 @@ function PersonalIdentity({ onChange, errors, formData }) {
 
         <div>
           <Input
+            required={true}
             label="Age"
             name="age"
             id="age"
             placeholder="Your age"
-            className={"w-48"}
+            className={"w-60"}
             onChange={(e) => onChange("age", e.target.value)}
             value={formData.age}
           />
@@ -42,11 +44,12 @@ function PersonalIdentity({ onChange, errors, formData }) {
       <div className="w-full flex flex-row justify-between mt-2">
         <div>
           <Input
+            required={true}
             label="Speciality"
             name="speciality"
             id="speciality"
             placeholder="Your speciality"
-            className={"w-48"}
+            className={"w-60"}
             onChange={(e) => onChange("speciality", e.target.value)}
             value={formData.speciality}
           />
@@ -57,11 +60,12 @@ function PersonalIdentity({ onChange, errors, formData }) {
 
         <div>
           <Input
+            required={true}
             label="Level"
             name="level"
             id="level"
             placeholder="Your level"
-            className={"w-48"}
+            className={"w-60"}
             onChange={(e) => onChange("level", e.target.value)}
             value={formData.level}
           />
@@ -71,6 +75,7 @@ function PersonalIdentity({ onChange, errors, formData }) {
 
       <div>
         <Input
+          required={true}
           label="University"
           name="university"
           id="university"
